@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Forms</title>
+</head>
+<body>
+  <h1>Volunteer Form</h1>
+  <form action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method="post">
+    <fieldset>
+      <legend>My Info</legend>
+      <div>
+        <label>first nane: <input> type="text" name="first_name_feild" size="100"</label>
+      </div>
+      <div>
+        <label>last nane: <input> type="text" name="last_name_feild" size="100"</label>
+      </div>
+      <div>
+        <label>phone: <input> type="tel" name="phone_field" size="100"</label>
+      </div>
+      <div>
+        <lable>email: <input> type="email" name="email_field" size="100"</lable>
+      </div>
+      <div>Gender:</div>
+      <div>
+        <lable>Male <input type="radio" name="gender_field" value="male"></lable>
+        <lable>Female <input type="radio" name="gender_field" value="female"></lable>
+      </div>
+      <div>Age</div>
+      <div>
+        <select name="age_field">
+          <option>under 18</option>
+          <option>over 18</option>
+        </select>
+      </fieldset>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>My availability</legend>
+      <H3>Days available</H3>
+      <div>
+        <div>
+          <lable>Sunday<input type="checkbox" name="available_feildset[]" value="sunday"></lable>
+        </div>
+        <div>
+          <lable>Monday<input type="checkbox" name="available_feildset[]" value="monday"></lable>
+        </div>
+        <div>
+          <lable>Tuesday<input type="checkbox" name="available_feildset[]" value="tuesday"></lable>
+        </div>
+        <div>
+          <lable>Wednesday<input type="checkbox" name="available_feildset[]" value="wednesday"></lable>
+        </div>
+        <div>
+          <lable>Thursday<input type="checkbox" name="available_feildset[]" value="thursday"></lable>
+        </div>
+        <div>
+          <lable>Frisday<input type="checkbox" name="available_feildset[]" value="frisday"></lable>
+        </div>
+        <div>
+          <label>Saturday<input type="checkbox" name="available_fieldset[]" value="saturday"></label>
+        </div>
+        <h3>Comments</h3>
+        <textarea name="comments_field"></textarea>
+      </div>
+    </fieldset>
+    <Input type="hidden" name "hidden_value" value="Abdelfattah Lahrach"></Input>
+    <input type="submit">
+</form>
+</body>
+</html>
